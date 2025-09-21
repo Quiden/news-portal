@@ -1,5 +1,5 @@
 const ROUTES_PATHS = {
-  AUTH: ['sing-in', 'sign-up'],
+  AUTH: ['/sign-in', '/sign-up'],
   MAIN: ['/', '/news', '/news/:id'],
 } as const;
 

@@ -1,6 +1,7 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import typescriptParser from '@typescript-eslint/parser';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import unusedImports from 'eslint-plugin-unused-imports';
 import { dirname } from 'path';
 import tseslint from 'typescript-eslint';
 import { fileURLToPath } from 'url';
@@ -21,10 +22,13 @@ const eslintConfig = [
     },
     plugins: {
       'simple-import-sort': simpleImportSort,
+      'unused-imports': unusedImports,
     },
     rules: {
+      'no-unused-vars': 'off',
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'unused-imports/no-unused-imports': 'error',
     },
     ignores: [
       'node_modules/**',
