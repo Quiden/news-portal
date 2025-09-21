@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { ROUTES } from '@/shared/config/routes';
+
 import styles from './page.module.css';
 
 export default function Home() {
@@ -24,7 +26,7 @@ export default function Home() {
         <div className={styles.ctas}>
           <a
             className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href={ROUTES['/news']}
             target="_blank"
             rel="noopener noreferrer">
             <Image

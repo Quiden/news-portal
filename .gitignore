@@ -50,3 +50,6 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+# api
+src/shared/api/

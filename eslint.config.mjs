@@ -1,9 +1,9 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
 import typescriptParser from '@typescript-eslint/parser';
-import tseslint from 'typescript-eslint';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import { dirname } from 'path';
+import tseslint from 'typescript-eslint';
+import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -26,7 +26,14 @@ const eslintConfig = [
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
     },
-    ignores: ['node_modules/**', '.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
+    ignores: [
+      'node_modules/**',
+      '.next/**',
+      'out/**',
+      'build/**',
+      'next-env.d.ts',
+      'src/shared/api/types/api.ts',
+    ],
   },
 ];
 
