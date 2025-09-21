@@ -52,4 +52,4 @@ next-env.d.ts
 *.sw?
 
 # api
-src/shared/api/
+src/shared/api/generated

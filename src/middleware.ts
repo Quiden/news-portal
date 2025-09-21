@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { ROUTES } from '@/shared/config/routes';
 
-const ACCESS_PATHS = [ROUTES['/sign-in'], ROUTES['/sign-up']];
+const ACCESS_PATHS = [ROUTES['/'], ROUTES['/sign-in'], ROUTES['/sign-up']];
 
 const shouldAllowAccess = (pathname: string, paths: Array<string>): boolean =>
   paths.includes(pathname);

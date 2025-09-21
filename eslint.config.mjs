@@ -36,7 +36,7 @@ const eslintConfig = [
       'out/**',
       'build/**',
       'next-env.d.ts',
-      'src/shared/api/types/api.ts',
+      'src/shared/api/generated/**',
     ],
   },
 ];
